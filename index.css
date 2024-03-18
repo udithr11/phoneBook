@@ -1,0 +1,121 @@
+#main_container{
+    width:50%;
+    background-color: aliceblue;
+    margin:auto;
+    margin-top:10vh;
+    height:50vh;
+    border-radius: 5px;
+    display: flex;
+}
+#left_part{
+    width:40%;
+    /* background-color:red; */
+    height:100%;
+    display:flex;
+    flex-direction: column; 
+    justify-content: start; 
+    align-items: center; 
+}
+#search_container{
+    /* background-color: aqua; */
+    display:flex;
+    padding:10px;
+}
+#search_query {
+    outline: none;  
+    border: none; 
+    padding: 5px; 
+    border-radius: 3px;
+}
+#search_button{
+    padding:3px;
+    border: none;
+    border-radius: 3px;
+    margin-left:2px;
+    cursor: pointer;
+}
+
+
+
+#display_add_container{
+    /* background-color: brown; */
+    height:100%;
+    width:92%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    
+}
+#display_names{
+    width:100%;
+    height:85%;
+    background-color: aquamarine;
+    overflow: auto; 
+}
+#add_button_container{
+    margin-top: 6px;
+}
+#add_button{
+    cursor:pointer;
+}
+
+#right_part {
+    background-color:gainsboro;
+    width:60%;
+    height:100%;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    flex-direction: column;
+    
+}
+#display_container{
+    display:flex;
+    /* background-color:beige; */
+    height:60%;
+    width:75%;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+#add_container{
+    display:none;
+    /* background-color:rgb(143, 59, 121); */
+    height:60%;
+    width:75%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#add_container input[type="text"] {
+    width: 94%;
+    padding: 6px; 
+    border-radius: 5px; 
+    border: none; 
+    outline: none; 
+    font-size: 16px; 
+    margin:4px;
+}
+
+#save_button {
+    margin-top: 10px;
+}
+.array_item {
+    display: flex;
+    flex-wrap: wrap;
+    align-items:baseline;
+    justify-content: space-between; 
+    margin: 1rem;
+    text-align: center;
+    font-weight: bold;
+}
+.button_wrapper {
+    display: flex;
+    align-items: center;
+}
+#display_container h1, #display_container h3 {
+    margin-left:0;
+}

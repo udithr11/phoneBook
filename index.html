@@ -1,0 +1,54 @@
+<?php include_once 'connection.php'; ?>
+<?php include_once 'add_data.php';?>
+<?php include_once 'delete_data.php';?>
+<?php include_once 'edit_data.php';?>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="index.css" />
+
+    <title>Document</title>
+</head>
+<body>
+    <div id="main_container" >
+        <div id="left_part">
+            <div id="search_container">
+            <div id="search_bar">
+                <input type="text" oninput="Search()" id="search_query" placeholder="Search">
+             </div>
+             <!-- <button onclick="Search()" id="search_button">Search</button> -->
+            </div>
+            <div id="display_add_container">
+                <div id="display_names"></div>
+                <div id="add_button_container">
+                    <button id="add_button" onclick="toggleContainer()">Add new Contact</button>
+                </div>
+            </div>
+        </div>
+            
+
+        
+        <div id="right_part">
+            <div  id="display_container" >
+                <h1 id="display_name" ></h1>
+                <h3 id="display_phone"></h3>
+                <h3 id="display_email"></h3>
+            </div>
+            <div  id="add_container" >
+                <input id="add_name" type="text" placeholder="Name"></input>
+                <input id="add_phone" type="text" placeholder="Phone"></input>
+                <input id="add_email" type="text" placeholder="Email"></input>
+                <button id="save_button" onclick="SAVE()">ADD</button>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+
+</body>
+</html>
